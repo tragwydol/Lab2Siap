@@ -16,6 +16,13 @@ def solve(a, b, c):
     return None
 
   # Вычисление корней уравнения
+  D=b ** 2 - 4 * a * c
+
+  if D < 0:
+    return 'корней нет'
+  elif D==0:
+    return -b/(2*a)
+  
 
   x1 = (-b + math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
   x2 = (-b - math.sqrt(b ** 2 - 4 * a * c)) / (2 * a)
@@ -27,6 +34,13 @@ def solve(a, b, c):
   else:
     return x2, x1
 
-a, b, c = 3, 0, 0
+try:
+  a=int(input('Input a : '))
+  b=int(input('Input b : '))
+  c=int(input('Input c : '))
+except:
+  print('Incorrect input')
+  exit()
 
+  
 print(solve(a, b, c))
