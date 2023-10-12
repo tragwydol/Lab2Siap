@@ -39,7 +39,7 @@ try:
   b=int(input('Input b : '))
   c=int(input('Input c : '))
 except:
-  print('Incorrect input')
+  print("Неверный ввод")
   exit()
 
   

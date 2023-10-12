@@ -16,10 +16,10 @@ def find_and_reverse(matrix):
  return -1
 
 try:
-  matrix = [[0, 0, 0], [2, 3, 4], [2, 8, -2]]
+  matrix = [[3, 4, 5], [2, 3, 4], [2, 8, -2]]
   i = find_and_reverse(matrix)
   if i != -1:
-   print(f"Первая возрастающая строка: {matrix[i]}")
+   print(f"Обратная первая возрастающая строка: {matrix[i]}")
 except IndexError as e:
   print(f"Ошибка: {e}")
 finally:
